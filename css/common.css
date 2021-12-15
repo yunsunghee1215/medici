@@ -1,0 +1,102 @@
+@charset 'utf-8';
+
+/* swiper */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  /* width: 100%; */
+  height: 100%;
+  /* object-fit: contain; */
+}
+
+
+
+
+/* header */
+
+.inner{width: 1150px; margin: 0 auto;
+       position: relative;}
+
+header{height: 100px; background-color: #fff;}
+
+header h1{padding-top: 30px;}
+header h1 a{display: block; width: 144px; height: 48px;
+            background: url(../img/logo.png) no-repeat;
+            font-size: 0; color: transparent;
+           }
+nav{position: absolute; top: 0; right: 238px;}
+nav .main_menu > li{float: left;}
+nav .main_menu > li > a{
+        display: block; 
+        padding: 0 40px; 
+        line-height: 100px;
+        text-align: center;
+        position: relative;
+        }
+nav .main_menu > li > a::after{content: ''; display: block; width: 100%; height: 0px; 
+                background-color: #02b4c1;
+                position: absolute; left: 0; bottom: 0;
+               }
+nav .main_menu > li:hover > a::after{height: 5px;}
+nav .sub_menu{display: none;}
+nav .sub_menu > li > a{
+        background-color: rgba(255, 255, 255, 0.8);
+        display: block; 
+        padding: 0 20px; 
+        line-height: 50px;
+        font-size: 14px;
+        text-align: center;
+        position: relative;
+        z-index: 99;
+        }
+nav .sub_menu > li > a::after{
+        content: ''; display: block; width: 100%; height: 0px; 
+        background-color: rgba(2, 180, 193, 0.3);
+        position: absolute; left: 0; bottom: 0;
+        }
+nav .sub_menu > li:hover > a::after{height: 1px;}
+nav .sub_menu > li:hover > a{background-color: rgba(255, 255, 255, 1);}
+
+
+.search{position: absolute; top: 30px; right: 0;
+        border: 3px solid #02b4c1; border-radius: 22px;
+        padding: 0 12px 0 20px;
+       }
+.search label{display: none;}
+.search input{width: 160px; height: 34px; 
+              border: 0;
+              /* outline: none; */
+             }
+.search button{width: 20px; height: 34px;
+               font-size: 0; color: transparent;
+               border: 0;
+               background: url(../img/search_G.png) no-repeat center;
+               /* background-color: transparent; */
+               position: absolute; top: 0; right: 12px;
+               cursor: pointer;
+              }

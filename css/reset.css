@@ -1,0 +1,50 @@
+@charset 'utf-8';
+
+@font-face{font-family: NanumSquare;
+           font-style: normal;
+           font-weight: 400; 
+           src: local(NanumSquareR);
+           src: url(font/NanumSquareR.eot), 
+                url(font/NanumSquareR.woff2) format(woff2);
+          }
+
+@font-face{font-family: NanumSquare;
+           font-style: normal;
+           font-weight: 800;
+           src: local(NanumSquareB);
+           src: url(font/NanumSquareB.eot), 
+                url(font/NanumSquareB.woff2) format(woff2);
+          }
+
+@font-face{font-family: NanumSquare;
+           font-style: normal;
+           font-weight: 900;
+           src: local(NanumSquareEB);
+           src: url(font/NanumSquareEB.eot), 
+               url(font/NanumSquareEB.woff2) format(woff2);
+          }
+    
+*{margin: 0; padding: 0;}
+
+header, nav, section, footer, aside, figure, figcaption{display: block;} /* 시멘트태그: html5shiv.js */
+
+body{font-family: NanumSquare, sans-serif;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 1.35;
+     color: #333;}
+ul, ol{list-style: none;}
+table{border-collapse: collapse; border-spacing: 0;}
+a{text-decoration: none; color: #333;}
+img{vertical-align: top; border: 0;}
+input, select, button{vertical-align: top;}
+
+/* float 엄마 높이 값 처리
+1. 가상의 [.clear]클래스 속성을 미리 지정
+2. 엄마에게 가상의 [.clear]클래스를 추가
+*/
+.clear::after{content: ''; display: block; clear: both;}
+
+/* 검색버튼 데코레이션 삭제 */
+fieldset{border: 0;}
+legend{display: none;}

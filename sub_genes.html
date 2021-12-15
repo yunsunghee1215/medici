@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메디치헬스케어에 오신 것을 환영합니다.</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/sub_genes.css" rel="stylesheet">
+
+      <!--script----------------------------------------------------------------------------------------->
+  <script src="js/jquery-1.12.3.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+
+      $(".main_menu > li").mouseover(function(){
+        // .children: 자식호출 함수
+        $(this).children(".sub_menu").stop().slideDown();
+      });
+      $(".main_menu > li").mouseout(function(){
+        // .children: 자식호출 함수
+        $(this).children(".sub_menu").stop().slideUp();
+      });
+      // .stop(): 연속재생 멈추게 꼭 넣아야 함!!
+
+
+
+    });
+
+  </script>
+
+  </head>
+<body>
+  <div id="wrap">
+    <form action="" method="">
+
+      <header>
+        <div class="inner">
+          <h1><a href="index.html">HEALTHCARE</a></h1>
+          <nav>
+            <ul class="main_menu clear">
+              <li>
+                <a href="#">회사소개</a>
+                <ul class="sub_menu">
+                  <li><a href="#">CEO 인사말</a></li>
+                  <li><a href="#">회사연혁</a></li>
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">메디치 뉴스</a></li>
+                </ul>
+              </li>
+              <li><a href="sub_genes.html">맞춤형 검사 안내</a>
+                <ul class="sub_menu">
+                  <li><a href="sub_genes.html">암과 만성질환 유전자검사</a></li>
+                  <li><a href="#">대사증후군 유전자검사</a></li>
+                  <li><a href="#">모발 미네랄/중금속검사</a></li>
+                  <li><a href="#">피부타입 유전자검사</a></li>
+                  <li><a href="#">DNA 다이어트 유전자검사</a></li>
+                  <li><a href="#">면역검사</a></li>
+                  <li><a href="#">유기산검사</a></li>
+                </ul>
+              </li>
+              <li><a href="#">상담 및 예약</a>
+                <ul class="sub_menu">
+                  <li><a href="#">상담내역</a></li>
+                  <li><a href="#">예약확인</a></li>
+                  <li><a href="#">문의사항</a></li>
+                </ul>
+              </li>
+              <li><a href="#">고객후기</a></li>
+            </ul>
+          </nav>
+          <div class="search">
+            <fieldset>
+              <legend>검색어 입력</legend>
+              <label for="search">검색</label>
+              <input type="text" id="search" placeholder="검색어를 입력하세요.">
+              <!-- <input type="text" placeholder="검색어를 입력하세요."> -->
+              <button type="button">검색버튼</button>
+            </fieldset>
+          </div><!--.search-->
+        </div><!--.inner-->
+      </header>
+
+      <div id="container">
+        <div class="inner clear">
+          <div class="left_menu">
+            <div class="menu_title">맞춤형 검사</div>
+            <ul>
+              <li><a href="#">암과 만성질환 유전자검사</a></li>
+              <li><a href="#">대사증후군 유전자검사</a></li>
+              <li><a href="#">모발 미네랄/중금속검사</a></li>
+              <li><a href="#">피부타입 유전자검사</a></li>
+              <li><a href="#">DNA 다이어트 유전자검사</a></li>
+              <li><a href="#">면역검사</a></li>
+              <li><a href="#">유기산검사</a></li>
+            </ul>
+          </div><!--.menu_left-->
+          <div class="rigth_contents">
+            <div class="header">
+              <h2><strong>암</strong>과 <strong>만성질환</strong> 유전자검사</h2>
+              <p>검사 항목 (총 <strong>21</strong>가지)</p>
+            </div><!--.header-->
+
+            <div class="genes_visual">
+              <div class="checkup_2 clear">
+                <div class="cencer">
+                  <h4>암 <strong>9</strong>종</h4>
+                  <p>위암, 폐암, 간암, 대장암,<br>갑상선암, 췌장암, 신장암, 담낭암,<br>(남)전립선암, (여)유방암</p>
+                </div><!--.cencer-->
+                <div class="chronic">
+                  <h4>만성질환 <strong>12</strong>종</h4>
+                  <p>알츠하이머, 뇌졸중, 심근경색,<br>당뇨, 본태성 고혈압, 관상동맥(협심증),<br>파킨슨병, 골다공증, 골관절염, 우울증,<br>천식, 공황장애</p>
+                </div><!--.chronic-->
+              </div><!--.checkup_2-->
+            </div><!--.genes_visual-->
+
+            <div class="genes_txt">
+              <div class="dna">
+                <div class="dna_txt">
+                  <h3>다양한 중증질환, <strong>내 유전자 때문</strong>이다?</h3>
+                  <p>
+                    유전자검사를 통해 발병위험성을 파악하고 생활습관교정으로 예방하세요.
+                  </p>
+                </div><!--.dna_txt-->
+              </div><!--.dna-->
+              <div class="dna">
+                <div class="dna_icon"></div>
+                <div class="dna_txt">
+                  <h3>헐리우드스타 <strong>안젤리나졸리</strong>를 기억하시나요?</h3>
+                  <p>
+                    그녀는 유방암과 난소암 등 집안 내력으로 전해오던암의 발병위험성을 알기 위해 유전자검사를 했고,<br>
+                    그간 암에 걸린 가족들과 동일한 유전자를 가지고 있음을 알고 예방조치를 취했습니다.<br>
+                    이제 그녀는 암에 대한 불안감으로부터 해방되었습니다.
+                  </p>
+                </div><!--.dna_txt-->
+              </div><!--.dna-->
+              <div class="dna">
+                <div class="dna_icon"></div>
+                <div class="dna_txt">
+                  <h3>유전자검사로 <strong>암과 질환의 위험성 파악</strong>?</h3>
+                  <p>
+                    유전이란 선대로부터 물려받은 직계 개체만이 가지는 특징적 형질을 말합니다.<br>
+                    유전자검사 결과는 실제로 특정 암이나 질환에 걸린 환자 군에서 주로 발견된 특정 유전자를 확인하고<br>
+                    해당 유전자를 검사자가 얼마나 보유하고 있는지를 확인하여 발병위험도를 나타내는 검사입니다.
+                  </p>
+                </div><!--.dna_txt-->
+              </div><!--.dna-->
+              <div class="genes_img"></div>
+            </div><!--.genes_txt-->
+
+            <div class="genes_test">
+              <div class="title_box">
+                <h3><strong>유전자검사</strong> 방법</h3>
+                <p>암과 만성질환 유전자검사는 면봉 하나면 충분합니다.</p>
+              </div><!--.title_box-->
+              <div class="test_box">
+                <ul class="clear">
+                  <li>
+                    <span>① 검사신청</span>
+                    <div class="icon_gene01"></div>
+                    <p>메디치헬스케어 사이트에서<br>간편하게 온라인 신청<br>(각 지역 거점병원 대행)</p>  
+                  </li>
+                  <li>
+                    <span>② 검진키트 발송</span>
+                    <div class="icon_gene02"></div>
+                    <p>검사 신청 시 입력하신<br>주소지로 검진키트 발송</p>  
+                  </li>
+                  <li>
+                    <span>③ 시료 채취 및 발송</span>
+                    <div class="icon_gene03"></div>
+                    <p>면봉으로 구강 내 양쪽 볼을<br>각 10회 채취 후 키트에 담아<br>택배 발송</p>  
+                  </li>
+                  <li>
+                    <span>④ 분석 및 결과 도출</span>
+                    <div class="icon_gene04"></div>
+                    <p>검채는 5일 정도의 분석과정을<br>거쳐 결과치가 제공</p>  
+                  </li>
+                  <li>
+                    <span>⑤ 영양테라피 제공</span>
+                    <div class="icon_gene05"></div>
+                    <p>결과지는 메디치헬스케어 홈페이지 내<br>마이페이지에서 확인 가능하며,<br>검사결과와 함께 영양테라피 제공</p>  
+                  </li>
+                  <li>
+                    <span>⑥ 건강 상담</span>
+                    <div class="icon_gene06"></div>
+                    <p>거점병원 및 전문가를 통한<br>검사결과 및 영양테라피 상담</p>  
+                  </li>
+                </ul>
+              </div><!--.test_box-->
+            </div><!--.genes_test-->
+
+          </div><!--.rigth_contents-->
+        </div><!--.inner-->
+      </div><!--.container-->
+
+
+      <footer>
+        <div class="inner">
+          <div class="f_info">
+            <address>주소 : 부산광역시 부산진구 중앙대로 708 부산파이낸스센터 4F, 5F 메디치헬스케어</address>
+            <p><span>TEL : 051-753-5600</span><span>FAX : 051-753-5117</span></p>
+            <p>Copyright (c) 2021. All rights reserved. </p>
+          </div><!--.f_info-->
+        </div><!--.inner-->
+      </footer>
+
+      <a href="#" class="go_top">맨위로 이동</a>
+  
+    </form>
+  </div><!--.wrap-->
+
+</body>
+</html>

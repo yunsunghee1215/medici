@@ -1,0 +1,106 @@
+@charset 'utf-8';
+
+/* main */
+
+/* header 공통파일 */
+
+#container{border-top: 1px solid #02b4c1;}
+
+.left_menu{width: 175px; float: left;}
+.menu_title{width: 100%; height: 90px; background-color: #02b4c1;
+            font-size: 24px; color: #fff;
+            text-align: center; line-height: 90px;}
+.left_menu li{border-bottom: 1px solid #ddd;}
+.left_menu li a{display: block; margin: 17px 10px;
+                font-size: 14px; color: #666;}
+.left_menu li:hover{border-bottom: 2px solid #02b4c1;}
+.left_menu li:hover a{font-weight: bold; color: #02b4c1;}
+
+
+.left_menu li:nth-child(1){border-bottom: 2px solid #02b4c1;}
+.left_menu li:nth-child(1) a{font-weight: bold; color: #02b4c1;}
+
+
+.rigth_contents{width: 940px;
+                padding-top: 80px;
+                float: right; 
+               }
+
+.header{text-align: center;}
+.header h2{font-size: 48px; font-weight: 400; color: #02b4c1;}
+.header h2::after{content: ''; display: block; width: 100px; height: 2px; background-color: #02b4c1; margin: 30px auto;}
+.header p{font-size: 24px; margin-bottom: 45px;}
+.header strong{color: #02b4c1; font-weight: 800;}
+
+.genes_visual{width: 100%; height: 517px;
+              padding-top: 88px; box-sizing: border-box;
+              background: url(../img/visual_genes.jpg) no-repeat;}
+.checkup_2{width: 769px;
+           margin: 0 auto;}
+.checkup_2 div{width: 340px; height: 340px;
+               background-color: #fff; border-radius: 50%;
+               text-align: center;
+              }
+.checkup_2 h4{font-size: 21px; margin-top: 55px;}
+.checkup_2 h4::after{content: ''; display: block; width: 1px; height: 35px; background-color: #02b4c1; margin: 10px auto 15px;}
+.checkup_2 strong{font-size: 30px; color: #02b4c1;}
+.checkup_2 p{font-size: 18px; line-height: 1.8;}
+.cencer{float: left;}
+.chronic{float: right;}
+
+.genes_txt{padding: 75px 0 0 0;}
+.genes_txt .dna{margin-bottom: 30px;
+                background: url(../img/icon_dna.png) no-repeat 0 0;
+               }
+.dna_txt{padding-left: 55px;}
+.dna_txt h3{font-size: 36px; margin-bottom: 25px; padding-top: 3px;}
+.dna_txt p{font-size: 21px; line-height: 1.8; margin-bottom: 90px;}
+.dna_txt strong{color: #02b4c1;}
+
+.genes_img{height: 280px;
+           border-bottom: 1px solid #02b4c1;
+           background: url(../img/family.jpg) no-repeat center bottom;
+          }
+
+
+.genes_test{padding: 60px 0;}
+.title_box{padding: 50px 0 35px;
+           text-align: center;
+           /* height: 220px;  */
+           background-color: #eff3f4; border-bottom: 1px solid #fff;}
+.title_box h3{font-size: 36px; font-weight: 400;}
+.title_box h3::after{content: ''; display: block; width: 100px; height: 2px; background-color: #02b4c1; margin: 25px auto;}
+.title_box strong{font-weight: 800;}
+.title_box p{font-size: 21px;}
+.test_box{background-color: #eff3f4;}
+.test_box ul{padding-top: 40px;}
+.test_box li{width: 310px; height: 270px;
+             text-align: center;
+             float: left;
+            }
+.test_box li span{font-size: 21px; font-weight: 800; color: #02b4c1;}
+.test_box li div{width: 98px; height: 98px; border-radius: 50%;
+                 background-color: #fff;
+                 margin: 10px auto;
+                }
+.icon_gene01{background: url(../img/icon_gene01.png) no-repeat center;}
+.icon_gene02{background: url(../img/icon_gene02.png) no-repeat center;}
+.icon_gene03{background: url(../img/icon_gene03.png) no-repeat center;}
+.icon_gene04{background: url(../img/icon_gene04.png) no-repeat center;}
+.icon_gene05{background: url(../img/icon_gene05.png) no-repeat center;}
+.icon_gene06{background: url(../img/icon_gene06.png) no-repeat center;}
+.test_box li p{line-height: 1.5;}
+
+
+footer{padding: 40px 0; background-color: #f2f2f2;}
+.f_info{padding-left: 210px; color: #666;
+        background: url(../img/logo_f.png) no-repeat left center;}
+address{font-style: normal;}
+.f_info p{margin-top: 5px;}
+.f_info p span{margin-right: 30px;}
+
+
+.go_top{display: block; width: 50px; height: 50px;
+        background: url(../img/top.png) no-repeat center #02b4c1;
+        font-size: 0; color: transparent;
+        position: fixed; bottom: 60px; right: 60px;}

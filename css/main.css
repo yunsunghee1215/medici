@@ -1,0 +1,160 @@
+@charset 'utf-8';
+
+
+
+
+
+/* main */
+
+/* header 공통파일 */
+
+.visual{
+        height: 800px;
+        background-color: #dbdfea;
+       }
+.visual .swiper-slide-active{position: relative; z-index: 10;}
+.visual .swiper-slide img{height: 100%;}
+.visual .inner{position: absolute;}
+/* .visual .mySwiper{
+        height: 800px;
+        background: #dbdfea url(../img/visual_main.jpg) no-repeat center;
+       } */
+.visual_txt{height: 800px; 
+            padding: 150px 0 0 575px; box-sizing: border-box;
+            text-align: left;
+            /* letter-spacing: -1px; */
+           }
+.visual_txt p{margin-left: 5px; font-size: 38px; 
+              font-weight: bold; letter-spacing: -1px;}
+.visual_txt h2{font-size: 84px; color: #0075b9; 
+               font-weight: 800; letter-spacing: -1.3px;}
+.visual_txt a{display: block; width: 220px; height: 60px;
+              background-color: #0075b9; border-radius: 30px;
+              font-size: 18px; color: #fff; text-align: center; line-height: 60px;
+              margin-top: 290px; margin-left: 270px;
+             }
+.visual_txt a:hover{color: #fff200; background-color: #02b4c1;
+                    font-weight: bold;}
+
+.swiper-pagination{bottom: 40px;}
+.swiper-pagination-bullet{width: 20px; height: 20px; transition: all 0.5s;}
+.swiper-pagination-bullet-active{width: 50px; height: 20px; border-radius: 10px;}
+
+.care_img{height: 570px; background: url(../img/img_care.jpg) no-repeat right top;}
+.care_txt{padding-top: 110px;}
+.txt_box div{float: left;}
+.txt_box .left{width: 40px; height: 50px; background-color: #02b4c1;
+               border-radius: 25px 0 0 25px;
+               margin-right: 4px;
+              }
+.txt_box .right{width: 500px; height: 50px; background-color: #02b4c1;
+                border-radius: 0 25px 25px 0;
+                font-size: 24px; color: #fff; font-weight: bold; line-height: 50px;
+                padding-left: 20px; box-sizing: border-box;
+               }
+.care_txt span{font-weight: 800; color: #fff200;}
+.care_txt h3{font-size: 46px; font-weight: 400; letter-spacing: -1px;
+             padding-top: 40px; padding-left: 40px;}
+.care_txt > p{font-size: 24px; line-height: 1.8; letter-spacing: -1px;
+              padding-top: 25px; padding-left: 40px;}
+.care_txt strong{color: #02b4c1;}
+
+.checkup{padding: 0 0 60px; background-color: #f7f7f7;}
+.checkup h3::before{content: ''; display: block; 
+                    width: 133px; height: 5px; background-color: #02b4c1;
+                    margin-bottom: 40px;}
+.checkup h3{font-size: 50px; font-weight: 400; margin-bottom: 20px;}
+.checkup h3 > strong{font-weight: 800;}
+.checkup h3 > span{font-size: 18px; color: #8e8e8e;}
+
+.checkup .swiper-button-next, 
+.checkup .swiper-button-prev{
+        width: 21px; height: 38px;
+        background: url(../img/button_slide_L.jpg) no-repeat center;
+        top: 90px; right: 50px;
+        }
+.checkup .swiper-button-prev{left: auto;}
+.checkup .swiper-button-next{right: 0; background-image: url(../img/button_slide_R.jpg);}
+
+.checkup .swiper-button-next:after, .checkup .swiper-rtl .swiper-button-prev:after{content: '';}
+.checkup .swiper-button-prev:after, .checkup .swiper-rtl .swiper-button-next:after{content: '';}
+
+.checkup .mySwiper2 .swiper-slide a{
+        display: block; 
+        width: 100%; height: 370px;
+        border: 2px solid #e0e0e0; box-sizing: border-box;
+        text-align: center;
+        background: #fff  url(../img/checkup_01.jpg) no-repeat center bottom;
+        }
+.checkup .mySwiper2 .swiper-slide a.img02{
+        background-image: url(../img/checkup_02.jpg);
+        }
+.checkup .mySwiper2 .swiper-slide a.img03{
+        background-image: url(../img/checkup_03.jpg);
+        }
+.checkup .mySwiper2 .swiper-slide a > h4{padding: 45px 0 15px; font-size: 24px;}
+.checkup .mySwiper2 .swiper-slide a > p{color: #8e8e8e;}
+.checkup .mySwiper2 .swiper-slide:hover a{border: 2px solid #02b4c1; box-sizing: border-box;}
+
+
+.counsel{background-color: #02b4c1;}
+.counsel_txt{padding: 0 0 60px;}
+.counsel_img{background: url(../img/doctor.png) no-repeat 800px bottom}
+.counsel h3::before{content: ''; display: block; 
+                    width: 133px; height: 5px; background-color: #fff200;
+                    margin-bottom: 40px;}
+.counsel h3{font-size: 50px; font-weight: 400; color: #fff; margin-bottom: 50px;}
+.counsel h3 > strong{font-weight: 800;}
+.counsel h3 > span{font-size: 18px; color: #fff;}
+.counsel h3 > span > strong{color: #fff200;}
+.counsel p{font-size: 28px; color: #fff;}
+.counsel p.title{font-size: 52px;}
+.counsel p > span{font-weight: bold; color: #fff200;}
+.counsel fieldset{margin-top: 30px;}
+.hospital label{display: none;}
+.hospital input{width: 297px; height: 56px; 
+                border: 0; outline: none; /*input 데코레이션 삭제*/
+                background-color: #fff; border-radius: 28px 0 0 28px;
+                font-family: NanumSquare;
+                text-align: center;
+               }
+.hospital button{width: 150px; height: 56px; padding-right: 10px;
+                 font-size: 24px; color: #02b4c1; 
+                 font-family: NanumSquare; font-weight: 800;
+                 border: 0;
+                 background-color: #fff200; border-radius: 0 28px 28px 0;
+                 cursor: pointer;
+                }
+.hospital .code_box input:focus + button {color: #fff200; background-color: #0075b9;}
+
+
+.board{padding: 60px 0;}
+.board_box{width: 530px; float: left; position: relative;}
+.board_box:last-child{float: right;}
+
+.board_box h4{font-size: 36px; margin-bottom: 30px;}
+.board_box .all_view{position: absolute; top: 20px; right: 0;}
+.board_box .list{border-top: 2px solid #666;}
+.board_box .list li{border-bottom: 1px solid #ddd;}
+.board_box .list li a{display: block; padding: 20px 10px;}
+.board_box .list a strong{display: block; width: 380px; 
+                          float: left; color: #666; 
+                          white-space: nowrap; 
+                          overflow: hidden; 
+                          text-overflow: ellipsis;
+                         }
+.board_box .list a:hover strong{color: #02b4c1;}
+.board_box .list a span{float: right; color: #aaa;}
+
+
+footer{padding: 40px 0; background-color: #f2f2f2;}
+.f_info{padding-left: 210px; color: #666;
+        background: url(../img/logo_f.png) no-repeat left center;}
+address{font-style: normal;}
+.f_info p{margin-top: 5px;}
+.f_info p span{margin-right: 30px;}
+
+.go_top{display: block; width: 50px; height: 50px;
+        background: url(../img/top.png) no-repeat center #02b4c1;
+        font-size: 0; color: transparent;
+        position: fixed; bottom: 60px; right: 60px;}

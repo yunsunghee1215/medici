@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메디치헬스케어에 오신 것을 환영합니다.</title>
+  <link href="css/reset.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+
+  <!--script----------------------------------------------------------------------------------------->
+  <script src="js/jquery-1.12.3.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+
+      $(".main_menu > li").mouseover(function(){
+        // .children: 자식호출 함수
+        $(this).children(".sub_menu").stop().slideDown();
+      });
+      $(".main_menu > li").mouseout(function(){
+        // .children: 자식호출 함수
+        $(this).children(".sub_menu").stop().slideUp();
+      });
+      // .stop(): 연속재생 멈추게 꼭 넣아야 함!!
+
+
+      var swiper = new Swiper(".mySwiper", {
+        // spaceBetween: 30,
+        // centeredSlides: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+
+      var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        loopFillGroupWithBlank: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+
+
+    });
+
+  </script>
+  
+</head>
+<body>
+  <div id="wrap">
+    <form action="" method="">
+
+      <header>
+        <div class="inner">
+          <h1><a href="index.html">HEALTHCARE</a></h1>
+          <nav>
+            <ul class="main_menu clear">
+              <li>
+                <a href="#">회사소개</a>
+                <ul class="sub_menu">
+                  <li><a href="#">CEO 인사말</a></li>
+                  <li><a href="#">회사연혁</a></li>
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">메디치 뉴스</a></li>
+                </ul>
+              </li>
+              <li><a href="sub_genes.html">맞춤형 검사 안내</a>
+                <ul class="sub_menu">
+                  <li><a href="sub_genes.html">암과 만성질환 유전자검사</a></li>
+                  <li><a href="#">대사증후군 유전자검사</a></li>
+                  <li><a href="#">모발 미네랄/중금속검사</a></li>
+                  <li><a href="#">피부타입 유전자검사</a></li>
+                  <li><a href="#">DNA 다이어트 유전자검사</a></li>
+                  <li><a href="#">면역검사</a></li>
+                  <li><a href="#">유기산검사</a></li>
+                </ul>
+              </li>
+              <li><a href="#">상담 및 예약</a>
+                <ul class="sub_menu">
+                  <li><a href="#">상담내역</a></li>
+                  <li><a href="#">예약확인</a></li>
+                  <li><a href="#">문의사항</a></li>
+                </ul>
+              </li>
+              <li><a href="#">고객후기</a></li>
+            </ul>
+          </nav>
+          <div class="search">
+            <fieldset>
+              <legend>검색어 입력</legend>
+              <label for="search">검색</label>
+              <input type="text" id="search" placeholder="검색어를 입력하세요.">
+              <!-- <input type="text" placeholder="검색어를 입력하세요."> -->
+              <button type="button">검색버튼</button>
+            </fieldset>
+          </div><!--.search-->
+        </div><!--.inner-->
+      </header>
+
+      <div id="container">
+
+        <div class="visual">
+
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/visual_main.jpg" alt="슬라이드이미지">
+
+                <div class="inner">
+                  <div class="visual_txt">
+                    <p>내 몸에 꼭 맞는 영양이 확인되는</p>
+                    <h2>맞춤 영양 케어</h2>
+                    <a href="#">자세히보기</a>
+                  </div><!--.visual_txt-->
+                </div><!--.inner-->
+
+              </div>
+              <div class="swiper-slide">
+                <img src="img/visual_main.jpg" alt="슬라이드이미지">
+
+                <div class="inner">
+                  <div class="visual_txt">
+                    <p>내 몸에 꼭 맞는 영양이 확인되는</p>
+                    <h2>맞춤 영양 케어</h2>
+                    <a href="#">자세히보기</a>
+                  </div><!--.visual_txt-->
+                </div><!--.inner-->
+
+              </div>
+              <div class="swiper-slide">
+                <img src="img/visual_main.jpg" alt="슬라이드이미지">
+
+                <div class="inner">
+                  <div class="visual_txt">
+                    <p>내 몸에 꼭 맞는 영양이 확인되는</p>
+                    <h2>맞춤 영양 케어</h2>
+                    <a href="#">자세히보기</a>
+                  </div><!--.visual_txt-->
+                </div><!--.inner-->
+
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div><!--.visual-->
+
+        <div class="care">
+          <div class="inner">
+            <div class="care_img">
+              <div class="care_txt">
+                <div class="txt_box clear">
+                  <div class="left"></div>
+                  <div class="right"><p>메디치헬스케어의 <span>맞춤 영양 케어란</span>?</p></div>
+                </div><!--.txt_box-->
+                <h3>내게 맞는 영양이 확인되는<br><strong>맞춤형 영양 테라피</strong></h3>
+                <p>
+                  <strong>맞춤형 검사</strong> 결과에 따라 개인에게 필요한 영양을 확인하고,<br>
+                  분석 결과에 맞는 영양 솔루션을 제공하는 맞춤형 영양 테라피!<br>
+                  직접 관리하기 힘든 가족들의 건강까지 메디치헬스케어 맞춤 영양 케어가 대신 해드립니다!
+                </p>
+              </div><!--.care_txt-->
+            </div><!--.care_img-->
+          </div><!--.inner-->
+        </div><!--.care-->
+
+        <div class="checkup">
+          <div class="inner">
+            <h3><strong>맞춤형</strong> 검사 <span>내게 꼭 맞는 영양을 확인, 건강한 삶을 시작하세요!</span></h3>
+            <!-- <div class="slide"><a href="#">슬라이드화살표</a></div> -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="img01">
+                    <h4>암과 만성질환 유전자검사</h4>
+                    <p>발병위험성을 파악 및 예방</p>
+                  </a>  
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="img02">
+                    <h4>대사증후군검사</h4>
+                    <p>대사질환과 관련된 유전적 위험도 분석</p>
+                  </a>  
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="img03">
+                    <h4>모발 미네랄/중금속검사</h4>
+                    <p>부족한 영양소 및 축적된 중금속 파악</p>
+                  </a>  
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="img01">
+                    <h4>암과 만성질환 유전자검사</h4>
+                    <p>발병위험성을 파악 및 예방</p>
+                  </a>  
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="img02">
+                    <h4>대사증후군검사</h4>
+                    <p>대사질환과 관련된 유전적 위험도 분석</p>
+                  </a>  
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="img03">
+                    <h4>모발 미네랄/중금속검사</h4>
+                    <p>부족한 영양소 및 축적된 중금속 파악</p>
+                  </a>  
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="img01">
+                    <h4>암과 만성질환 유전자검사</h4>
+                    <p>발병위험성을 파악 및 예방</p>
+                  </a>  
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="img02">
+                    <h4>대사증후군검사</h4>
+                    <p>대사질환과 관련된 유전적 위험도 분석</p>
+                  </a>  
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="img03">
+                    <h4>모발 미네랄/중금속검사</h4>
+                    <p>부족한 영양소 및 축적된 중금속 파악</p>
+                  </a>  
+                </div>
+              </div>
+            </div>
+          </div><!--.inner-->
+        </div><!--.checkup-->
+
+        <div class="counsel">
+          <div class="inner">
+            <div class="counsel_img">
+              <div class="counsel_txt">
+                <h3><strong>온라인 </strong>상담 <span>온라인 구매 및 검사 서비스를 위해 <strong>[병원코드]</strong>가 필요합니다.</span></h3>
+                <p>나를 위한 맞춤형 영양 테라피
+                <p class="title">이제, <span>의료인</span>과 <span>상담</span>하세요!</p>
+                <div class="hospital">
+                  <fieldset>
+                    <legend>상담신청</legend>
+                    <div class="code_box">
+                      <label for="code">병원코드입력</label>
+                      <input type="text" id="code" placeholder="상담을 원하시는 병원코드를 입력해 주세요.">
+                      <button type="button">상담신청</button>
+                    </div><!--.code_box-->
+                  </fieldset>
+                </div><!--.hospital-->
+              </div><!--.counsel_txt-->
+            </div><!--.counsel_img-->
+          </div><!--.inner-->
+        </div><!--.counsel-->
+
+        <div class="board">
+          <div class="inner clear">
+            <div class="board_box">
+              <h4>공지사항</h4>
+              <a href="#" class="all_view">전체보기 &gt;</a>
+              <ul class="list">
+                <li>
+                  <a href="#" class="clear">
+                    <strong>[공지] 리뉴얼 오픈이벤트 당첨자 발표, 리뉴얼 오픈이벤트 당첨자 발표, 리뉴얼 오픈이벤트 당첨자 발표</strong>
+                    <span>2021. 07. 20</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="clear">
+                    <strong>[공지] 시스템 점검 안내</strong>
+                    <span>2021. 07. 20</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="clear">
+                    <strong>[공지] 홈페이지 리뉴얼 오픈이벤트</strong>
+                    <span>2021. 07. 20</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="clear">
+                    <strong>[공지] 홈페이지를 리뉴얼했습니다.</strong>
+                    <span>2021. 07. 20</span>
+                  </a>
+                </li>
+              </ul>
+            </div><!--.board_box-->
+            <div class="board_box">
+              <h4>뉴스</h4>
+              <a href="#" class="all_view">전체보기 &gt;</a>
+              <ul class="list">
+                <li>
+                  <a href="#" class="clear">
+                    <strong>[공지] 리뉴얼 오픈이벤트 당첨자 발표, 리뉴얼 오픈이벤트 당첨자 발표, 리뉴얼 오픈이벤트 당첨자 발표</strong>
+                    <span>2021. 07. 20</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="clear">
+                    <strong>[공지] 시스템 점검 안내</strong>
+                    <span>2021. 07. 20</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="clear">
+                    <strong>[공지] 홈페이지 리뉴얼 오픈이벤트</strong>
+                    <span>2021. 07. 20</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="clear">
+                    <strong>[공지] 홈페이지를 리뉴얼했습니다.</strong>
+                    <span>2021. 07. 20</span>
+                  </a>
+                </li>
+              </ul>
+            </div><!--.board_box-->
+          </div><!--.inner-->
+        </div><!--.board-->
+
+      </div><!--.container-->
+
+      <footer>
+        <div class="inner">
+          <div class="f_info">
+            <address>주소 : 부산광역시 부산진구 중앙대로 708 부산파이낸스센터 4F, 5F 메디치헬스케어</address>
+            <p><span>TEL : 051-753-5600</span><span>FAX : 051-753-5117</span></p>
+            <p>Copyright (c) 2021. All rights reserved. </p>
+          </div><!--.f_info-->
+        </div><!--.inner-->
+      </footer>
+
+      <a href="#" class="go_top">맨위로 이동</a>
+
+    </form>
+  </div><!--#wrap-->
+</body>
+</html>
